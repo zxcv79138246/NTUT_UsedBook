@@ -89,7 +89,8 @@ body {
         margin: 30px 0 10px 0;
         background-size: contain;
         background-repeat: no-repeat;
-        transition: all 0.3s; }
+        transition: all 0.3s;
+        cursor: pointer; }
       .usedbook article .college .college-icon:hover {
         transform: scale(1.2); }
       .usedbook article .college #cmee {
