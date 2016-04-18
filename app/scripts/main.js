@@ -1,13 +1,13 @@
 $(function(){
-  var advertId = 1;
+  var advertId = 0;
   $('.post-arrow').click(function(){
-    if (advertId == 0) {
-      advertId = -2;
+    if (advertId == -1) {
+      advertId = 1;
     }else {
-      advertId++;
+      advertId--;
     }
-    advertId = (advertId)%3;
-    var move = advertId * 960;
+    advertId = (advertId)%2;
+    var move = (advertId + 1) * -960;
     console.log('adverId:' + advertId + 'move: '+ move);
     $('.slide').stop().animate(
       {left: move + 'px'},
@@ -19,10 +19,14 @@ $(function(){
   });
 
   $('.next-arrow').click(function(){
-    advertId--;
-    advertId = (advertId)%3;
-    var move = advertId * 960;
-    console.log('adverId:' + advertId + 'move: '+ move);
+    if (advertId == 1) {
+      advertId = -1;
+    }else {
+      advertId++;
+    }
+    advertId = (advertId)%2;
+    var move = (advertId + 1) * -960;
+    console.log('adverId:' + advertId + '  move: '+ move);
     $('.slide').stop().animate(
       {left: move + 'px'},
       {
