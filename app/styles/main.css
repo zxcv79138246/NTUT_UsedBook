@@ -61,7 +61,7 @@ body {
         position: absolute;
         top: 50%;
         transform: translate(0, -50%);
-        color: white;
+        color: bl;
         opacity: 0.2;
         cursor: pointer; }
       .usedbook article .advertising .arrow:hover {
