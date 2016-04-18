@@ -1,0 +1,9 @@
+diff a/app/index.html b/app/index.html	(rejected hunks)
+@@ -6,7 +6,6 @@
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>NTUT_UsedBook</title>
+     <link rel="stylesheet" href="styles/main.css">
+-    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css"/>
+     <!--<link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css"/>-->
+     <!-- endbuild -->
+ 
