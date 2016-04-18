@@ -1,0 +1,96 @@
+body {
+  margin: 0 auto; }
+  body a {
+    text-decoration: none; }
+
+.usedbook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-image: url("../images/bg.jpg"); }
+  .usedbook nav {
+    width: 100%;
+    height: 45px;
+    background-color: #343434;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .usedbook nav .center {
+      width: 960px;
+      display: flex;
+      align-items: center; }
+      .usedbook nav .center .icon {
+        flex: 1;
+        color: white;
+        font-style: italic; }
+      .usedbook nav .center ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex: 2; }
+        .usedbook nav .center ul a {
+          color: white; }
+  .usedbook article {
+    width: 960px; }
+    .usedbook article .advertising {
+      width: 100%;
+      height: 400px;
+      position: relative; }
+      .usedbook article .advertising .mask {
+        height: 400px;
+        background-color: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        z-index: 1; }
+      .usedbook article .advertising .mask-left {
+        width: calc((100vw - 960px)/2);
+        left: calc((100vw - 960px)/ -2); }
+      .usedbook article .advertising .mask-right {
+        width: calc((100vw - 960px)/2);
+        right: calc((100vw - 960px)/ -2); }
+      .usedbook article .advertising .slide {
+        display: flex;
+        position: absolute;
+        left: -960px; }
+        .usedbook article .advertising .slide .img {
+          width: 960px;
+          height: 400px;
+          cursor: pointer; }
+      .usedbook article .advertising .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        color: white;
+        opacity: 0.2;
+        cursor: pointer; }
+      .usedbook article .advertising .arrow:hover {
+        opacity: 0.7; }
+      .usedbook article .advertising .post-arrow {
+        left: 20px; }
+      .usedbook article .advertising .next-arrow {
+        right: 20px; }
+    .usedbook article .college {
+      width: 100%;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .usedbook article .college .title {
+        font-size: 2em;
+        color: #1A4DC3; }
+      .usedbook article .college .row {
+        display: flex;
+        justify-content: space-around; }
+      .usedbook article .college .college-icon {
+        width: 150px;
+        height: 150px;
+        margin: 30px 0 10px 0;
+        background-size: contain;
+        background-repeat: no-repeat; }
+      .usedbook article .college #cmee {
+        background-image: url("../images/CMEE.png"); }
+      .usedbook article .college #cecs {
+        background-image: url("../images/CECS.png"); }
+
+/*# sourceMappingURL=main.css.map */
