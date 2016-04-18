@@ -2,6 +2,8 @@ body {
   margin: 0 auto; }
   body a {
     text-decoration: none; }
+  body a:hover {
+    text-decoration: none; }
 
 .usedbook {
   display: flex;
