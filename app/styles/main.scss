@@ -237,28 +237,7 @@ body {
       box-shadow: 6px 10px 16px 5px rgba(0,0,0,0.5);
       overflow: hidden;
     }
-
-    .determine {
-      width: 100px;
-      height: 30px;
-      background-color: #66afe9;
-      color: white;
-      border-radius: 5px;
-      position: absolute;
-      bottom: 20px;
-      right: 60px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-
-    }
-
-    .determine:active {
-      transform: scale(0.9);
-    }
   }
-
 
   #overlay {
     display: none;

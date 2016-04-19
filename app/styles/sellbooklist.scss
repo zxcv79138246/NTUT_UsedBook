@@ -15,6 +15,12 @@ body {
 }
 
 .sellbooklist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-image: url("../images/bg.jpg");
+
   nav {
     width: 100%;
     height: 60px;
@@ -51,5 +57,233 @@ body {
         }
       }
     }
+  }
+
+  article {
+    width: 960px;
+    .top {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+
+      .college {
+        width: 720px;
+
+        ul {
+          list-style: none;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          margin: 0;
+          border-top: solid 2px #424242;
+          border-bottom: solid 2px #424242;
+
+          a {
+            color: black;
+          }
+
+          li {
+            padding: 10px 15px;
+          }
+
+          li:hover {
+            background-color: whitesmoke;
+
+            a {
+              color: #00b3ee;
+            }
+          }
+        }
+      }
+
+      .want {
+        font-size: 24px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: 0.5s;
+        margin-right: 20px;
+      }
+
+      .want:hover {
+        font-size: 28px;
+        font-weight: 900;
+      }
+    }
+  }
+
+  .filter {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid silver;
+    padding-bottom: 20px;
+
+    .search {
+      display: flex;
+      margin-left: 10px;
+
+      #search-inp {
+        box-sizing: border-box;
+        border-radius: 3px 0 0 3px;
+        border: 1px solid #ccc;
+        margin-right: 0;
+        outline: none;
+        font-size: 12px;
+        height: 32px;
+        line-height: 32px;
+        padding: 0px 5px;
+        width: 150px;
+      }
+
+      #search-sub {
+        box-sizing: border-box;
+        border-radius: 0 3px 3px 0;
+        border: 1px solid #ccc;
+        margin-left: -5px;
+        width: auto;
+        padding: 0 10px;
+        height: 32px;
+        line-height: 32px;
+        outline: none;
+        background: #f3f3f3;
+        transition: background .3s ease;
+        font-size: 12px;
+        cursor: pointer;
+      }
+
+      #search-sub:hover {
+        background: #e3e3e3;
+      }
+    }
+
+    .select{
+      padding-left: 30px;
+      display: flex;
+      align-items: center;
+      select {
+        font-size: 16px;
+      }
+
+      #filter-department {
+        box-sizing: border-box;
+        width: auto;
+        font-size: 12px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        padding: 0 10px;
+        margin-left: 10px;
+        background: #f3f3f3;
+        transition: background .3s ease;
+
+      }
+
+      #filter-department:hover {
+        background: #e3e3e3;
+      }
+    }
+  }
+
+  .content {
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .sellitem {
+      width:220px;
+      height: 340px;
+      margin-bottom: 20px;
+      background-color: white;
+      position: relative;
+      cursor: pointer;
+
+      .img {
+        width: 100%;
+        height: 75%;
+        position: relative;
+        background-size: cover;
+        background-image: url("../images/os.jpeg");
+
+        .title {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 10px 7px;
+          background-color: rgba(0,0,0,0.5);
+          color: white;
+          position: absolute;
+          top: 0;
+          opacity: 1;
+          transition: all 0.3s;
+        }
+      }
+
+
+      .img:hover {
+        .title {
+          opacity: 0;
+        }
+      }
+
+      .detail {
+        padding: 5px 10px;
+      }
+    }
+  }
+
+  #modal {
+    display: none;
+    position: absolute;
+    z-index: 20;
+    top:0;
+    left: 0;
+
+    .modal-close {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .modal-close:hover {
+      color: #00b3ee;
+    }
+
+    .modal-content {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 6px 10px 16px 5px rgba(0,0,0,0.5);
+      overflow: hidden;
+    }
+
+    .determine {
+      width: 100px;
+      height: 30px;
+      background-color: #66afe9;
+      color: white;
+      border-radius: 5px;
+      position: absolute;
+      bottom: 20px;
+      right: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+    }
+
+    .determine:active {
+      transform: scale(0.9);
+    }
+  }
+
+  #overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 200%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.7);
   }
 }

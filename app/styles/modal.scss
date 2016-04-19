@@ -6,6 +6,26 @@
     padding: 10px 25px;
   }
 
+  .determine {
+    width: 100px;
+    height: 30px;
+    background-color: #66afe9;
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+  }
+
+  .determine:active {
+    transform: scale(0.9);
+  }
+
   .sellbook {
     width: 720px;
     height: 600px;
@@ -60,7 +80,7 @@
   }
 
   .wantbook {
-    width: 720px;
+    width: 760px;
     height: 430px;
 
     .content {

@@ -3,6 +3,21 @@
   color: white;
   font-size: 1.5em;
   padding: 10px 25px; }
+#modal .determine {
+  width: 100px;
+  height: 30px;
+  background-color: #66afe9;
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
+#modal .determine:active {
+  transform: scale(0.9); }
 #modal .sellbook {
   width: 720px;
   height: 600px; }
@@ -15,7 +30,7 @@
       display: flex; }
     #modal .sellbook .content label {
       width: 25%;
-      margin-right: 3px;
+      margin-right: 4px;
       font-size: 16px;
       display: flex;
       justify-content: flex-end; }
@@ -39,7 +54,7 @@
       margin-bottom: 10px;
       border: black 1px solid; }
 #modal .wantbook {
-  width: 720px;
+  width: 760px;
   height: 430px; }
   #modal .wantbook .content {
     width: 100%;

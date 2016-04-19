@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>書籍清單</title>
-    <link rel="stylesheet" href="styles/sellbooklist.css"/>
+  <meta charset="UTF-8">
+  <title>書籍清單</title>
+  <link rel="stylesheet" href="styles/sellbooklist.css"/>
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="styles/modal.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <div class="sellbooklist">
@@ -11,13 +14,125 @@
       <div class="center">
         <i class="fa fa-book fa-2x icon" aria-hidden="true"> NTUT</i>
         <ul>
-          <li><a href="">首頁</a></li>
+          <li><a href="index.html">首頁</a></li>
           <li id="want"><a>徵求收購</a></li>
           <li id="sell"><a>登錄書籍</a></li>
           <li><a href="">會員中心</a></li>
         </ul>
       </div>
     </nav>
+    <article>
+      <div class="top">
+        <div class="college">
+          <ul>
+            <li><a href="">機電學院</a></li>
+            <li><a href="">工程學院</a></li>
+            <li><a href="">管理學院</a></li>
+            <li><a href="">設計學院</a></li>
+            <li><a href="">人文與社會科科學院</a></li>
+            <li><a href="">博雅</a></li>
+            <li><a href="">其他</a></li>
+          </ul>
+        </div>
+        <div class="want">收購書籍區</div>
+      </div>
+      <div class="filter">
+        <div class="search">
+          <input type="text" id="search-inp" placeholder="書籍關鍵字"/>
+          <div id="search-sub">找書籍</div>
+        </div>
+        <div class="select">
+          <label for="department">系所：</label>
+          <select name="" id="department">
+            <option value="">電機工程</option>
+            <option value="">電子工程</option>
+            <option value="">資訊工程</option>
+            <option value="">光電工程</option>
+          </select>
+          <div id="filter-department">篩選</div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="sellitem">
+          <div class="img">
+          <div class="title">作業系統</div>
+          </div>
+          <div class="detail">
+            <label>作者：</label>
+            <span>Gold Knife </br></span>
+            <label>系所：</label>
+            <span>資工系 </br></span>
+            <label>價錢：</label>
+            <span>300 NT </br></span>
+          </div>
+        </div>
+        <div class="sellitem">
+          <div class="img">
+            <div class="title">作業系統</div>
+          </div>
+          <div class="detail">
+            <label>作者：</label>
+            <span>Gold Knife </br></span>
+            <label>系所：</label>
+            <span>資工系 </br></span>
+            <label>價錢：</label>
+            <span>300 NT </br></span>
+          </div>
+        </div>
+        <div class="sellitem">
+          <div class="img">
+            <div class="title">作業系統</div>
+          </div>
+          <div class="detail">
+            <label>作者：</label>
+            <span>Gold Knife </br></span>
+            <label>系所：</label>
+            <span>資工系 </br></span>
+            <label>價錢：</label>
+            <span>300 NT </br></span>
+          </div>
+        </div>
+        <div class="sellitem">
+          <div class="img">
+            <div class="title">作業系統</div>
+          </div>
+          <div class="detail">
+            <label>作者：</label>
+            <span>Gold Knife </br></span>
+            <label>系所：</label>
+            <span>資工系 </br></span>
+            <label>價錢：</label>
+            <span>300 NT </br></span>
+          </div>
+        </div>
+        <div class="sellitem">
+          <div class="img">
+            <div class="title">作業系統</div>
+          </div>
+          <div class="detail">
+            <label>作者：</label>
+            <span>Gold Knife </br></span>
+            <label>系所：</label>
+            <span>資工系 </br></span>
+            <label>價錢：</label>
+            <span>300 NT </br></span>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- modal浮框-->
+    <div id="modal">
+      <div class="modal-content"></div>
+      <i class="fa fa-times fa-2x modal-close"></i>
+    </div>
+    <!-- 深色背景-->
+    <div id="overlay"></div>
   </div>
+
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../bower_components/jquery.easing/js/jquery.easing.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <script src="scripts/main.js"></script>
 </body>
 </html>
