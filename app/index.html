@@ -7,11 +7,13 @@
     <title>NTUT_UsedBook</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="styles/modal.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">-->
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- Latest compiled and minified JavaScript -->
@@ -24,9 +26,9 @@
         <div class="center">
           <i class="fa fa-book fa-2x icon" aria-hidden="true"> NTUT</i>
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">徵求收購</a></li>
-            <li><a href="">登錄書籍</a></li>
+            <li><a href="">首頁</a></li>
+            <li id="want"><a>徵求收購</a></li>
+            <li id="sell"><a>登錄書籍</a></li>
             <li><a href="">會員中心</a></li>
           </ul>
         </div>
@@ -49,14 +51,12 @@
             <div class="college-icon" id="cmee"></div>
             <div class="college-icon" id="cecs"></div>
             <div class="college-icon" id="coe"></div>
-            <!--<div class="college-icon" id="com"></div>-->
-            <!--<div class="college-icon" id="des"></div>-->
-            <!--<div class="college-icon" id="coss"></div>-->
+            <div class="college-icon" id="com"></div>
           </div>
           <div class="row">
-            <div class="college-icon" id="com"></div>
             <div class="college-icon" id="des"></div>
             <div class="college-icon" id="coss"></div>
+<<<<<<< HEAD
 
             <!--<i class="material-icons">computer</i> 電資-->
             <!--<i class="material-icons">color_lens</i> 設計-->
@@ -64,9 +64,28 @@
             <!--<i class="material-icons">build</i> 機電-->
             <!--<i class="material-icons">settings</i> 工程-->
             <!--<i class="material-icons">content_paste</i> 管理-->
+=======
+            <div class="college-icon" id="tunshi"></div>
+            <div class="college-icon" id="other"></div>
+>>>>>>> 868fa9f55e4b8d95d0785adb1a089dd83be43052
           </div>
         </div>
       </article>
+      <footer>
+        <div class="content">
+          <div class="@design-by">Design By Chih-Chun-Liu, Tree Wu</div>
+          <div class="relate"><a href="http://ntut.cc/">Related Links: NUTU.cc</a></div>
+        </div>
+      </footer>
+
+      <!-- modal浮框-->
+      <div id="modal">
+        <div class="modal-content"></div>
+        <i class="fa fa-times fa-2x modal-close"></i>
+        <div class="determine">確定</div>
+      </div>
+      <!-- 深色背景-->
+      <div id="overlay"></div>
     </div>
 
     <!-- bower:js -->

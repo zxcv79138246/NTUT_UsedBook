@@ -1,0 +1,110 @@
+#modal {
+  .title {
+    background-color: #343434;
+    color: white;
+    font-size: 1.5em;
+    padding: 10px 25px;
+  }
+
+  .sellbook {
+    width: 720px;
+    height: 600px;
+
+    .content {
+      width: 50%;
+      padding: 30px;
+      display: inline-block;
+
+      .box {
+        margin-bottom: 20px;
+        display: flex;
+      }
+
+      label {
+        width: 25%;
+        margin-right: 30px;
+        font-size: 16px;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      input {
+        font-size: 16px;
+        flex:1;
+      }
+
+      textarea {
+        border: 1px inset;
+        flex: 1;
+      }
+
+      select {
+        font-size: 16px;
+      }
+    }
+
+    .photo-box {
+      width: 37%;
+      height: 100%;
+      display: inline-block;
+      vertical-align: top;
+      padding-top: 30px;
+
+      .photo {
+        width: 90%;
+        height: 56%;
+        margin-bottom: 10px;
+        border: black 1px solid;
+      }
+    }
+  }
+
+  .wantbook {
+    width: 720px;
+    height: 430px;
+
+    .content {
+      width: 100%;
+      padding: 30px;
+      display: flex;
+      box-sizing: border-box;
+
+      .content-left {
+        width: 41%;
+      }
+
+      .content-right {
+        width: 50%;
+        padding-left: 30px;
+      }
+
+      .box {
+        margin-bottom: 20px;
+        display: flex;
+      }
+
+      label {
+        width: 25%;
+        margin-right: 30px;
+        font-size: 16px;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      input {
+        font-size: 16px;
+        flex:1;
+      }
+
+      textarea {
+        border: 1px inset;
+        flex: 1;
+      }
+
+      select {
+        font-size: 16px;
+      }
+    }
+  }
+
+}
