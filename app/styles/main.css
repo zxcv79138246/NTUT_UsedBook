@@ -122,5 +122,9 @@ body {
       align-items: center; }
     .usedbook footer .relate a {
       color: white; }
+  .usedbook #modal {
+    display: none; }
+  .usedbook #overlay {
+    display: none; }
 
 /*# sourceMappingURL=main.css.map */
