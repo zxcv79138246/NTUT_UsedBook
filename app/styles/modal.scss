@@ -78,10 +78,11 @@
       }
     }
   }
-  
+
   .sellbook {
     width: 720px;
     height: 600px;
+
     .content {
       width: 50%;
       padding: 30px;
@@ -179,4 +180,33 @@
     }
   }
 
+  .sellbookitem {
+    width: 720px;
+    height: 600px;
+
+    .content {
+      width: 50%;
+      padding: 30px;
+      display: inline-block;
+
+      .box {
+        margin-bottom: 20px;
+        display: flex;
+      }
+
+      span {
+        width: 70%;
+        word-break: break-all;
+      }
+    }
+
+    .photo-box {
+      .photo{
+        border: 0px none;
+        background-size: cover;
+        background-image: url("../images/os.jpeg");
+        box-shadow: 5px 5px 8px 4px rgba(0,0,0,0.5);
+      }
+    }
+  }
 }

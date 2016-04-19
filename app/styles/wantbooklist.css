@@ -8,49 +8,49 @@ body {
   body a:hover {
     text-decoration: none; }
 
-.sellbooklist {
+.wantbooklist {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-size: cover;
   background-image: url("../images/bg.jpg"); }
-  .sellbooklist nav {
+  .wantbooklist nav {
     width: 100%;
     height: 60px;
     background-color: #343434;
     display: flex;
     align-items: center;
     justify-content: center; }
-    .sellbooklist nav .center {
+    .wantbooklist nav .center {
       width: 960px;
       display: flex;
       align-items: center; }
-      .sellbooklist nav .center .icon {
+      .wantbooklist nav .center .icon {
         flex: 1;
         color: white;
         font-style: italic;
         font-weight: 900; }
-      .sellbooklist nav .center ul {
+      .wantbooklist nav .center ul {
         list-style: none;
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex: 2; }
-        .sellbooklist nav .center ul li {
+        .wantbooklist nav .center ul li {
           cursor: pointer; }
-        .sellbooklist nav .center ul a {
+        .wantbooklist nav .center ul a {
           color: white; }
-  .sellbooklist article {
+  .wantbooklist article {
     width: 960px; }
-    .sellbooklist article .top {
+    .wantbooklist article .top {
       display: flex;
       justify-content: space-between;
       margin: 20px 0; }
-      .sellbooklist article .top a {
+      .wantbooklist article .top a {
         color: black; }
-      .sellbooklist article .top .college {
+      .wantbooklist article .top .college {
         width: 720px; }
-        .sellbooklist article .top .college ul {
+        .wantbooklist article .top .college ul {
           list-style: none;
           display: flex;
           justify-content: space-around;
@@ -58,32 +58,32 @@ body {
           margin: 0;
           border-top: solid 2px #424242;
           border-bottom: solid 2px #424242; }
-          .sellbooklist article .top .college ul a {
+          .wantbooklist article .top .college ul a {
             color: black; }
-          .sellbooklist article .top .college ul li {
+          .wantbooklist article .top .college ul li {
             padding: 10px 15px; }
-          .sellbooklist article .top .college ul li:hover {
+          .wantbooklist article .top .college ul li:hover {
             background-color: whitesmoke; }
-            .sellbooklist article .top .college ul li:hover a {
+            .wantbooklist article .top .college ul li:hover a {
               color: #00b3ee; }
-      .sellbooklist article .top .want {
+      .wantbooklist article .top .want {
         font-size: 24px;
         font-weight: 700;
         cursor: pointer;
         transition: 0.5s;
         margin-right: 20px; }
-      .sellbooklist article .top .want:hover {
+      .wantbooklist article .top .want:hover {
         font-size: 28px;
         font-weight: 900; }
-    .sellbooklist article .filter {
+    .wantbooklist article .filter {
       display: flex;
       align-items: center;
       border-bottom: 1px solid silver;
       padding-bottom: 20px; }
-      .sellbooklist article .filter .search {
+      .wantbooklist article .filter .search {
         display: flex;
         margin-left: 10px; }
-        .sellbooklist article .filter .search #search-inp {
+        .wantbooklist article .filter .search #search-inp {
           box-sizing: border-box;
           border-radius: 3px 0 0 3px;
           border: 1px solid #ccc;
@@ -94,7 +94,7 @@ body {
           line-height: 32px;
           padding: 0px 5px;
           width: 150px; }
-        .sellbooklist article .filter .search #search-sub {
+        .wantbooklist article .filter .search #search-sub {
           box-sizing: border-box;
           border-radius: 0 3px 3px 0;
           border: 1px solid #ccc;
@@ -108,15 +108,15 @@ body {
           transition: background .3s ease;
           font-size: 12px;
           cursor: pointer; }
-        .sellbooklist article .filter .search #search-sub:hover {
+        .wantbooklist article .filter .search #search-sub:hover {
           background: #e3e3e3; }
-      .sellbooklist article .filter .select {
+      .wantbooklist article .filter .select {
         padding-left: 30px;
         display: flex;
         align-items: center; }
-        .sellbooklist article .filter .select select {
+        .wantbooklist article .filter .select select {
           font-size: 16px; }
-        .sellbooklist article .filter .select #filter-department {
+        .wantbooklist article .filter .select #filter-department {
           box-sizing: border-box;
           width: auto;
           font-size: 12px;
@@ -126,60 +126,28 @@ body {
           margin-left: 10px;
           background: #f3f3f3;
           transition: background .3s ease; }
-        .sellbooklist article .filter .select #filter-department:hover {
+        .wantbooklist article .filter .select #filter-department:hover {
           background: #e3e3e3; }
-    .sellbooklist article .content {
-      padding-top: 25px;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap; }
-      .sellbooklist article .content .sellitem {
-        width: 220px;
-        height: 340px;
-        margin-bottom: 20px;
-        background-color: white;
-        position: relative;
-        cursor: pointer; }
-        .sellbooklist article .content .sellitem .img {
-          width: 100%;
-          height: 75%;
-          position: relative;
-          background-size: cover;
-          background-image: url("../images/os.jpeg"); }
-          .sellbooklist article .content .sellitem .img .title {
-            box-sizing: border-box;
-            width: 100%;
-            padding: 10px 7px;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            position: absolute;
-            top: 0;
-            opacity: 1;
-            transition: all 0.3s; }
-        .sellbooklist article .content .sellitem .img:hover .title {
-          opacity: 0; }
-        .sellbooklist article .content .sellitem .detail {
-          padding: 5px 10px; }
-  .sellbooklist #modal {
+  .wantbooklist #modal {
     display: none;
     position: absolute;
     z-index: 20;
     top: 0;
     left: 0; }
-    .sellbooklist #modal .modal-close {
+    .wantbooklist #modal .modal-close {
       position: absolute;
       top: 10px;
       right: 12px;
       color: white;
       cursor: pointer; }
-    .sellbooklist #modal .modal-close:hover {
+    .wantbooklist #modal .modal-close:hover {
       color: #00b3ee; }
-    .sellbooklist #modal .modal-content {
+    .wantbooklist #modal .modal-content {
       background-color: white;
       border-radius: 10px;
       box-shadow: 6px 10px 16px 5px rgba(0, 0, 0, 0.5);
       overflow: hidden; }
-    .sellbooklist #modal .determine {
+    .wantbooklist #modal .determine {
       width: 100px;
       height: 30px;
       background-color: #66afe9;
@@ -192,9 +160,9 @@ body {
       justify-content: center;
       align-items: center;
       cursor: pointer; }
-    .sellbooklist #modal .determine:active {
+    .wantbooklist #modal .determine:active {
       transform: scale(0.9); }
-  .sellbooklist #overlay {
+  .wantbooklist #overlay {
     display: none;
     position: fixed;
     width: 100%;
@@ -204,4 +172,4 @@ body {
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.7); }
 
-/*# sourceMappingURL=sellbooklist.css.map */
+/*# sourceMappingURL=wantbooklist.css.map */

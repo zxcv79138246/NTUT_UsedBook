@@ -81,6 +81,15 @@ $(function(){
     });
   });
 
+  //sellbook list 點擊
+  $('.sellitem').click(function() {
+    $('.modal-content').load("modal/sellbookitem.html",function(){
+      modalCenter();
+      $('#modal').show();
+      $('#overlay').show();
+    });
+  });
+
 
   $('.modal-close').click(function (){
     modalClose();

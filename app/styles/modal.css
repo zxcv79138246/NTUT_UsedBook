@@ -122,5 +122,23 @@
       flex: 1; }
     #modal .wantbook .content select {
       font-size: 16px; }
+#modal .sellbookitem {
+  width: 720px;
+  height: 600px; }
+  #modal .sellbookitem .content {
+    width: 50%;
+    padding: 30px;
+    display: inline-block; }
+    #modal .sellbookitem .content .box {
+      margin-bottom: 20px;
+      display: flex; }
+    #modal .sellbookitem .content span {
+      width: 70%;
+      word-break: break-all; }
+  #modal .sellbookitem .photo-box .photo {
+    border: 0px none;
+    background-size: cover;
+    background-image: url("../images/os.jpeg");
+    box-shadow: 5px 5px 8px 4px rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=modal.css.map */
