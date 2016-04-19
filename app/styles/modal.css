@@ -1,0 +1,72 @@
+#modal .title {
+  background-color: #343434;
+  color: white;
+  font-size: 1.5em;
+  padding: 10px 25px; }
+#modal .sellbook {
+  width: 720px;
+  height: 600px; }
+  #modal .sellbook .content {
+    width: 50%;
+    padding: 30px;
+    display: inline-block; }
+    #modal .sellbook .content .box {
+      margin-bottom: 20px;
+      display: flex; }
+    #modal .sellbook .content label {
+      width: 25%;
+      margin-right: 30px;
+      font-size: 16px;
+      display: flex;
+      justify-content: flex-end; }
+    #modal .sellbook .content input {
+      font-size: 16px;
+      flex: 1; }
+    #modal .sellbook .content textarea {
+      border: 1px inset;
+      flex: 1; }
+    #modal .sellbook .content select {
+      font-size: 16px; }
+  #modal .sellbook .photo-box {
+    width: 37%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 30px; }
+    #modal .sellbook .photo-box .photo {
+      width: 90%;
+      height: 56%;
+      margin-bottom: 10px;
+      border: black 1px solid; }
+#modal .wantbook {
+  width: 720px;
+  height: 430px; }
+  #modal .wantbook .content {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    box-sizing: border-box; }
+    #modal .wantbook .content .content-left {
+      width: 41%; }
+    #modal .wantbook .content .content-right {
+      width: 50%;
+      padding-left: 30px; }
+    #modal .wantbook .content .box {
+      margin-bottom: 20px;
+      display: flex; }
+    #modal .wantbook .content label {
+      width: 25%;
+      margin-right: 30px;
+      font-size: 16px;
+      display: flex;
+      justify-content: flex-end; }
+    #modal .wantbook .content input {
+      font-size: 16px;
+      flex: 1; }
+    #modal .wantbook .content textarea {
+      border: 1px inset;
+      flex: 1; }
+    #modal .wantbook .content select {
+      font-size: 16px; }
+
+/*# sourceMappingURL=modal.css.map */

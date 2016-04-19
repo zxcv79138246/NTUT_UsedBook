@@ -1,4 +1,6 @@
 $(function(){
+
+  //廣告
   var advertId = 0;
   $('.post-arrow').click(function(){
     if (advertId == -1) {
@@ -34,5 +36,47 @@ $(function(){
         easing: 'easeInOutCubic'
       }
     );
+  });
+
+  //浮筐置中
+  var modalCenter = function (){
+    var top = Math.max($(window).height() - $('#modal').outerHeight(), 0) / 2;
+    var left = Math.max($(window).width() - $('#modal').outerWidth(), 0) / 2;
+    $('#modal').css({
+      top: top + $(window).scrollTop(),
+      left: left + $(window).scrollLeft()
+    });
+  };
+
+  //浮筐關閉
+  var modalClose = function (){
+    $('#modal').hide();
+    $('#overlay').hide();
+  };
+
+  //登錄書籍
+  $('#sell').click(function (){
+    $('.modal-content').load("modal/sellbook.html",function (){
+      modalCenter();
+      $('#modal').show();
+      $('#overlay').show();
+    });
+  });
+
+  //徵求收購
+  $('#want').click(function (){
+    $('.modal-content').load("modal/wantbook.html",function (){
+      modalCenter();
+      $('#modal').show();
+      $('#overlay').show();
+    });
+  });
+
+  $('.modal-close').click(function (){
+    modalClose();
+  });
+
+  $('#overlay').click(function (){
+    modalClose();
   });
 });
