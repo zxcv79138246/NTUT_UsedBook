@@ -107,5 +107,20 @@ body {
         background-image: url("../images/DES.png"); }
       .usedbook article .college #coss {
         background-image: url("../images/COSS.png"); }
+  .usedbook footer {
+    width: 100%;
+    height: 50px;
+    background-color: #343434;
+    display: flex;
+    justify-content: center; }
+    .usedbook footer .content {
+      width: 960px;
+      color: white;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .usedbook footer .relate a {
+      color: white; }
 
 /*# sourceMappingURL=main.css.map */
