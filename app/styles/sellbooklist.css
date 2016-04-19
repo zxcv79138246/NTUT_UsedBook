@@ -160,6 +160,21 @@ body {
           opacity: 0; }
         .sellbooklist article .content .sellitem .detail {
           padding: 5px 10px; }
+  .sellbooklist footer {
+    width: 100%;
+    height: 50px;
+    background-color: #343434;
+    display: flex;
+    justify-content: center; }
+    .sellbooklist footer .content {
+      width: 960px;
+      color: white;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .sellbooklist footer .relate a {
+      color: white; }
   .sellbooklist #modal {
     display: none;
     position: absolute;

@@ -128,6 +128,21 @@ body {
           transition: background .3s ease; }
         .wantbooklist article .filter .select #filter-department:hover {
           background: #e3e3e3; }
+  .wantbooklist footer {
+    width: 100%;
+    height: 50px;
+    background-color: #343434;
+    display: flex;
+    justify-content: center; }
+    .wantbooklist footer .content {
+      width: 960px;
+      color: white;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .wantbooklist footer .relate a {
+      color: white; }
   .wantbooklist #modal {
     display: none;
     position: absolute;
