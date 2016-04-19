@@ -209,4 +209,43 @@
       }
     }
   }
+
+  .wantbookdetail {
+    width: 760px;
+    height: 430px;
+
+    .content {
+      width: 100%;
+      padding: 30px;
+      display: flex;
+      box-sizing: border-box;
+
+      .content-left {
+        width: 41%;
+      }
+
+      .content-right {
+        width: 50%;
+        padding-left: 30px;
+      }
+
+      .box {
+        margin-bottom: 20px;
+        display: flex;
+      }
+
+      label {
+        width: 25%;
+        margin-right: 4px;
+        font-size: 16px;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      span {
+        width: 70%;
+        word-break: break-all;
+      }
+    }
+  }
 }

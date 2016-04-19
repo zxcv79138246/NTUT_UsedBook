@@ -140,5 +140,30 @@
     background-size: cover;
     background-image: url("../images/os.jpeg");
     box-shadow: 5px 5px 8px 4px rgba(0, 0, 0, 0.5); }
+#modal .wantbookdetail {
+  width: 760px;
+  height: 430px; }
+  #modal .wantbookdetail .content {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    box-sizing: border-box; }
+    #modal .wantbookdetail .content .content-left {
+      width: 41%; }
+    #modal .wantbookdetail .content .content-right {
+      width: 50%;
+      padding-left: 30px; }
+    #modal .wantbookdetail .content .box {
+      margin-bottom: 20px;
+      display: flex; }
+    #modal .wantbookdetail .content label {
+      width: 25%;
+      margin-right: 4px;
+      font-size: 16px;
+      display: flex;
+      justify-content: flex-end; }
+    #modal .wantbookdetail .content span {
+      width: 70%;
+      word-break: break-all; }
 
 /*# sourceMappingURL=modal.css.map */

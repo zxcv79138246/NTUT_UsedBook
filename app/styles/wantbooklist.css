@@ -20,7 +20,8 @@ body {
     background-color: #343434;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    position: fixed; }
     .wantbooklist nav .center {
       width: 960px;
       display: flex;
@@ -41,6 +42,7 @@ body {
         .wantbooklist nav .center ul a {
           color: white; }
   .wantbooklist article {
+    padding-top: 60px;
     width: 960px; }
     .wantbooklist article .top {
       display: flex;
@@ -128,6 +130,33 @@ body {
           transition: background .3s ease; }
         .wantbooklist article .filter .select #filter-department:hover {
           background: #e3e3e3; }
+    .wantbooklist article .content {
+      padding-top: 15px;
+      padding-bottom: 25px;
+      display: flex;
+      flex-direction: column; }
+      .wantbooklist article .content .item-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid silver; }
+        .wantbooklist article .content .item-row .column {
+          flex: 1;
+          padding-right: 20px; }
+        .wantbooklist article .content .item-row .viewmore {
+          width: 80px;
+          height: 50%;
+          padding: 5px 10px;
+          background-color: #008800;
+          color: white;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer; }
+      .wantbooklist article .content .item-row:last-child {
+        border: none; }
   .wantbooklist footer {
     width: 100%;
     height: 50px;

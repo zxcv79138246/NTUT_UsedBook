@@ -90,6 +90,15 @@ $(function(){
     });
   });
 
+  //收購詳細資料
+  $('.viewmore').click(function (){
+    $('.modal-content').load("modal/wantbookdetail.html",function(){
+      modalCenter();
+      $('#modal').show();
+      $('#overlay').show();
+    });
+  });
+
 
   $('.modal-close').click(function (){
     modalClose();

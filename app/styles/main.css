@@ -20,7 +20,9 @@ body {
     background-color: #343434;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    position: fixed;
+    z-index: 5; }
     .usedbook nav .center {
       width: 960px;
       display: flex;
@@ -41,6 +43,7 @@ body {
         .usedbook nav .center ul a {
           color: white; }
   .usedbook article {
+    padding-top: 60px;
     width: 960px; }
     .usedbook article .advertising {
       width: 100%;
