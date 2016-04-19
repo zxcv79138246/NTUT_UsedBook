@@ -99,6 +99,14 @@ $(function(){
     });
   });
 
+  //登入
+  $('#login').click(function () {
+    $('.modal-content').load("modal/login.html",function(){
+      modalCenter();
+      $('#modal').show();
+      $('#overlay').show();
+    });
+  });
 
   $('.modal-close').click(function (){
     modalClose();
