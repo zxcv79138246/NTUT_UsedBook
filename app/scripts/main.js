@@ -10,7 +10,6 @@ $(function(){
     }
     advertId = (advertId)%2;
     var move = (advertId + 1) * -960;
-    console.log('adverId:' + advertId + 'move: '+ move);
     $('.slide').stop().animate(
       {left: move + 'px'},
       {
@@ -28,7 +27,6 @@ $(function(){
     }
     advertId = (advertId)%2;
     var move = (advertId + 1) * -960;
-    console.log('adverId:' + advertId + '  move: '+ move);
     $('.slide').stop().animate(
       {left: move + 'px'},
       {
@@ -37,6 +35,26 @@ $(function(){
       }
     );
   });
+
+  //廣告輪播
+  var turnAdert = setInterval(function(){
+    if (advertId == 1) {
+      advertId = -1;
+    }else {
+      advertId++;
+    }
+    advertId = (advertId)%2;
+    var move = (advertId + 1) * -960;
+    $('.slide').stop().animate(
+      {left: move + 'px'},
+      {
+        duration: 1000,
+        easing: 'easeInOutCubic'
+      }
+    );
+  }, 3000);
+
+  turnAdert();
 
   //浮筐置中
   var modalCenter = function (){
