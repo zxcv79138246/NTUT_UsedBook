@@ -72,6 +72,16 @@ $(function(){
     });
   });
 
+  //會員中心
+  $('#member').click(function(){
+    $('.modal-content').load("modal/member.html",function(){
+      modalCenter();
+      $('#modal').show();
+      $('#overlay').show();
+    });
+  });
+
+
   $('.modal-close').click(function (){
     modalClose();
   });
