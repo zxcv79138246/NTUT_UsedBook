@@ -54,8 +54,6 @@ $(function(){
     );
   }, 3000);
 
-  turnAdert();
-
   //浮筐置中
   var modalCenter = function (){
     var top = Math.max($(window).height() - $('#modal').outerHeight(), 0) / 2;
